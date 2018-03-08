@@ -1,31 +1,28 @@
-<span style="color: pink">{{error}}</span>
-
+<!-- <div class="imgcontainer">
+<img alt="study lab" src="resources/images/lab.jpg"> 
+</div> -->
+<html>
+<body>
+<div class="body1">
+<div id="login-box">
+<span style="color: red" class="error" ng-show="error.message!=undefined">{{error.message}}</span>
+<span class="msg" ng-show="message!=undefined">{{message}}</span>
 <form>
-
 <table>
-
 <tr>
-
 <td>Enter Email:</td>
-
 <td><input type="email" ng-model="user.email"></td>
-
 </tr>
-
 <tr>
-
 <td>Enter Password:</td>
-
 <td><input type="password" ng-model="user.password"></td>
-
 </tr>
-
 <tr>
-
-<td><input type="submit" ng-click="login(user)" value="Login"></td>
-
+<td><input type="submit" ng-click="login(user)"></td>
 </tr>
-
 </table>
-
 </form>
+</div>
+</div>
+</body>
+</html>
