@@ -11,11 +11,13 @@ import org.springframework.orm.hibernate4.HibernateTransactionManager;
 import org.springframework.orm.hibernate4.LocalSessionFactoryBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import com.niit.Model.User;
-
+import com.niit.Model.BlogComment;
 import com.niit.Model.BlogPost;
 import com.niit.Model.BlogPostLikes;
+import com.niit.Model.Friend;
 import com.niit.Model.Job;
 import com.niit.Model.Notification;
+import com.niit.Model.ProfilePicture;
 import com.niit.Model.User;
 
 @Configuration
@@ -35,7 +37,7 @@ public class DBConfiguration {
 			hibernateProperties.setProperty("hibernate.hbm2ddl.auto", "update");
 			hibernateProperties.setProperty("hibernate.show_sql", "true");
 			lsf.addProperties(hibernateProperties);
-			Class classes[]=new Class[]{User.class,Job.class,BlogPost.class,Notification.class,BlogPostLikes.class};//class objects of all entities
+			Class classes[]=new Class[]{User.class,Job.class,BlogPost.class,Notification.class,BlogComment.class,BlogPostLikes.class,ProfilePicture.class,Friend.class};//class objects of all entities
 		    return lsf.addAnnotatedClasses(classes).buildSessionFactory();
 		}
 		@Bean
