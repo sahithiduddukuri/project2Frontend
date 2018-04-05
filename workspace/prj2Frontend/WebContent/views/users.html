@@ -1,0 +1,9 @@
+<span ng-if="users.length==0">No users found</span>
+<ul style="list-style:none">
+<li ng-repeat="user in users">
+{{user.firstName}} &nbsp; {{user.lastName}} <br>
+{{user.email}}<br>
+{{user.phonenumber}}
+<hr>
+</li>
+</ul>
