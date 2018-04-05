@@ -1,0 +1,37 @@
+package hello;
+
+import java.util.Scanner;
+
+public class Min_Max_Number {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner(System.in);
+		int sum=0,min,max;
+		System.out.println("Enter the size of an array:");
+		int size=s.nextInt();
+		int a[]=new int [size];
+		for(int i=0;i<size;i++)
+		{
+			System.out.println("Enter the elements at a" + " ["+i+"]: " );
+			a[i]=s.nextInt();
+		}
+		System.out.println("=====");
+		max=a[0];
+		min=a[0];
+		for(int i=0;i<size;i++)
+		{
+			if(max<a[i])
+			{
+				max=a[i];
+			}
+			else if(min>a[i])
+			{
+				min=a[i];
+			}
+			System.out.println("maximum element :"+max);
+			System.out.println("minimum element :"+min);
+		}
+	}
+
+}

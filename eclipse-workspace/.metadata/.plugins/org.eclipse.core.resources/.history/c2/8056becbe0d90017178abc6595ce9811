@@ -1,0 +1,29 @@
+package hello;
+
+import java.util.*;
+
+public class Linearsearch {
+
+	public static void main(String[] args) {
+		
+	// TODO Auto-generated method stub
+		Scanner s = new Scanner (System.in);
+		int search,i;
+		System.out.println("Enter the size of an array :");
+		int size=s.nextInt();
+		int a[]= new Int[size];
+		for(i=0;i<size;i++)
+		{
+			System.out.println("Enter elements to search");
+			search=s.nextInt();
+			for(i=0;i<size;i++)
+			{
+				if(search==a[i])
+				{
+					break;
+				}
+			}
+			System.out.println("Elements to search : a[i]");
+		}
+	}
+}

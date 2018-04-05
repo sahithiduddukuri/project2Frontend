@@ -1,0 +1,25 @@
+package hello;
+import static java.lang.System.in;
+public class StringOperation1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str1 = "Welcome to our new House ";
+		String str2 = " Deepu ";
+		String str3 = "hello";
+		String str4 = "HOW ARE YOU";
+		System.out.println("length :" +str1.length());
+		System.out.println("charAt :" +str1.charAt(5));
+		System.out.println("IndexOf :" +str1.indexOf('3'));
+		System.out.println("SubString :" +str1.substring(0,5));
+		System.out.println("SubString :" +str1.substring(5));
+		System.out.println(str3+"replace:" +str3.replace('h','a'));
+		System.out.println("trim :" +str2.trim());
+		System.out.println("upper :" +str2.toUpperCase());
+	if(str2.equalsIgnoreCase(str3))
+	{
+		System.out.println("Both are same");
+	}
+	}
+
+}

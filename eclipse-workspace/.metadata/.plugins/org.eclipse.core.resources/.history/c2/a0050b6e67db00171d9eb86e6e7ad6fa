@@ -1,0 +1,20 @@
+package hello;
+
+public class NumberPattern2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int j = 5;
+        while (j <= 1) {
+            int i = 5;
+            while (i >= j) {
+                System.out.print(i);
+                i++;
+            }
+            j++;
+            System.out.println();
+        }
+		       
+	}
+
+}

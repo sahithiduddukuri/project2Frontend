@@ -1,0 +1,28 @@
+package hello;
+
+public class palindrom {
+
+	public static void main(String[] args) {
+		
+		int n,r,sum;
+		n=153;
+		int temp=n;
+		sum=0;
+		while(n>0)
+		{
+			r=n%10;
+			sum=10*sum+r;
+			n=n/10;// TODO Auto-generated method stub
+		}
+		if(n==sum)
+		{
+			System.out.println("Number is palindrom");
+		}
+		else
+		{
+			System.out.println("Number is not a palindrom");
+		}
+
+	}
+
+}

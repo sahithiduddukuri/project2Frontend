@@ -1,0 +1,5 @@
+package hello;
+
+public class hai {
+System.out.println("n");
+}
