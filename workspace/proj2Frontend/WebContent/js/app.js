@@ -53,20 +53,35 @@ app.config(function($routeProvider){
 		templateUrl:'views/home.html',
 		controller:'NotificationController'
 	})
+	
 	.when('/uploadprofilepic',{
+
 		templateUrl:'views/uploadprofilepic.html'
-	})
-	/*.when('/suggestedusers',{
-		templateUrl:'views/suggestedusers.html',
-		controller:'FriendController'
-	})*/.when('/suggestedusers',{
-
-		templateUrl:'views/suggestedusers.html',
-
-		controller:'FriendController'
 
 	})
+.when('/suggestedusers',{
+		templateUrl:'views/suggestedusers.html',
+		controller:'FriendController'
+	})
+	.when('/pendingrequests',{
+		templateUrl:'views/pendingrequests.html',
+		controller:'FriendController'
 
+	})
+	
+	.when('/friends',{
+		templateUrl:'views/friendsList.html',
+		controller:'FriendController'
+
+	})
+	.when('/chat',{
+		templateUrl:'views/chat.html',
+		controller:'ChatCtrl'
+	})
+	.when('/searchuser',{
+		templateUrl:'views/users.html',
+		controller:'UserController'
+	})
 	
 	.otherwise({
 		templateUrl:'views/home.html'

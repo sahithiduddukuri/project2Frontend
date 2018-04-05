@@ -1,68 +1,42 @@
-<html data-ng-app="app">
-
-<head>
-
-<meta charset="ISO-8859-1">
-
-
-<title>Insert title here</title>
-
-</head>
-
-<body data-ng-controller='UserController'>
-
-<form  style="border:1px solid #ccc">
-
-  <div class="container">
-
-    <h1>Sign Up</h1>
-
-    <p>Please fill in this form to create an account.</p>
-
-    <hr>
-
-<label for="FirstName"><b>Enter FirstName</b></label>
-
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-md-offset-4">
+            <h1 class="text-center login-title">Sign in</h1>
+            <div class="account-wall">
+               
+                <form class="form-signin">
+               
     <input type="text" placeholder="Enter FirstName" ng-model="user.firstName" required>
-
-    <label for="LastName"><b>Enter LastName</b></label>
 
     <input type="text" placeholder="Enter LastName" ng-model="user.lastName" required>
 
-    <label for="email"><b>Email</b></label>
-
+    
     <input type="text" placeholder="Enter Email" ng-model="user.email" required>
-
-    <label for="PhoneNumber"><b>Enter PhoneNumber</b></label>
 
     <input type="text" placeholder="Enter PhoneNumber" ng-model="user.phonenumber" required>
 
-    
-
-
-
-    <label for="password"><b>Password</b></label>
 
     <input type="password" placeholder="Enter Password" ng-model="user.password" required>
 
 <div class="form-group" align="center">
 
-							<label class="col-md-4 control-label"><i>Select Role</i></label><input type="radio" ng-model="user.role" value="Student">Student
+							</label>
+							
+							
+							<label class="col-md-4 control-label" style="color:black"><i>Select Role</i></label>
+							<input type="radio" ng-model="user.role" value="Student" style="color:black">Student
 
-							<input type="radio" ng-model="user.role" value="Alumini">Alumini
+							<input type="radio" ng-model="user.role" value="Alumini" style="color:black">Alumini
 
-							<input type="radio" ng-model="user.role" value="Employee">Employee
-
+							<input type="radio" ng-model="user.role" value="Employee" style="color:black">Employee
+							
 						</div>
-
-						<div class="form-group" align="center"><input type="submit" style="color:black"value="Register" ng-click="registerUser(user)"><br></div><br>
-
-
-
-  </div>
-
-</form>
-
-</body>
-
-</html>
+                <button class="btn btn-lg btn-primary btn-block" value="Register" type="submit" ng-click="registerUser(user)">
+                    Register</button>
+                
+                </form>
+            </div>
+           
+        </div>
+    </div>
+</div>

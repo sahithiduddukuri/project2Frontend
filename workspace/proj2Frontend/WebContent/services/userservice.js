@@ -27,5 +27,9 @@ app.factory('UserService',function($http){
 	 userService.updateUser=function(user){
 		 return $http.put("http://localhost:8181/proj2Backend/updateuser",user)
 	 }
+	 userService.searchUser=function(user) {
+			return $http.get("http://localhost:8181/proj2Backend/searchuser/"+user)
+		}
+		return userService;
 	return userService;
 })
